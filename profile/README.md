@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,11,20&height=160&section=header&text=EvidentLoop&fontSize=38&fontColor=fff&animation=twinkling&fontAlignY=38&desc=Verification%20infrastructure%20for%20AI%20coding%20workflows&descSize=15&descAlignY=62" width="100%" />
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,11,20&height=160&section=header&text=EvidentLoop&fontSize=38&fontColor=fff&animation=twinkling&fontAlignY=38&desc=Infrastructure%20for%20trustworthy%20AI%20coding%20workflows&descSize=15&descAlignY=62" width="100%" />
 </p>
 
 <p align="center">
@@ -23,13 +23,15 @@ A shared session accumulates local assumptions, abandoned approaches, and retry 
 | **Local** | One diff + isolated context | Context-isolated cross-review | [CrossReview](https://github.com/evidentloop/cross-review) |
 | **Global** | Full workflow lifecycle | Checkpoints, blueprints, traceable decision chains | [Sopify](https://github.com/evidentloop/Sopify) |
 
-**[CrossReview](https://github.com/evidentloop/cross-review)** — Automated cross-review for AI coding. Same model, clean session, independent second pass on your output. No new model needed — just a fresh context.
+**[CrossReview](https://github.com/evidentloop/cross-review)** — Verification primitive for AI coding. Same model, clean session, independent second pass on your output. Atomic and composable — runs standalone or as a verification step inside broader workflows.
 
-**[Sopify](https://github.com/evidentloop/Sopify)** — Recoverable, reviewable, accumulable AI coding workflows. Pauses when facts are missing. Waits at decision points. Resumes from state, not from scratch.
+**[Sopify](https://github.com/evidentloop/Sopify)** — AI coding workflow orchestration layer. Manages state, plans, and decisions across the full lifecycle — checkpoints when facts are missing, resumes from state, not from scratch. CrossReview is designed to slot in as its verification step.
 
 ---
 
-**Local verification is necessary. Global governance is sufficient. Together, AI workflows move from "can generate" to "can be trusted".**
+CrossReview is the point — atomic, precise, isolated.  
+Sopify is the line — orchestrating the full workflow, with CrossReview as its verification step.  
+Together, AI coding moves from "can generate" to "can be trusted".
 
 <p align="center">
   <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,11,20&height=80&section=footer" width="100%" />
