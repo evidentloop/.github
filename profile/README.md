@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,11,20&height=160&section=header&text=EvidentLoop&fontSize=38&fontColor=fff&animation=twinkling&fontAlignY=38&desc=Verification%20infrastructure%20for%20AI-assisted%20programming&descSize=15&descAlignY=62" width="100%" />
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,11,20&height=160&section=header&text=EvidentLoop&fontSize=38&fontColor=fff&animation=twinkling&fontAlignY=38&desc=Verification%20infrastructure%20for%20AI%20coding%20workflows&descSize=15&descAlignY=62" width="100%" />
 </p>
 
 <p align="center">
