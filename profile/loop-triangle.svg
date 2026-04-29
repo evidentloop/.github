@@ -1,32 +1,27 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 260" width="400" height="260">
-  <defs>
-    <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5"
-            markerWidth="6" markerHeight="6" orient="auto-start-reverse">
-      <path d="M 0 0 L 10 5 L 0 10 z" fill="#58A6FF"/>
-    </marker>
-    <style>
-      text { font-family: 'Segoe UI', system-ui, -apple-system, sans-serif; }
-    </style>
-  </defs>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 400" width="480" height="400">
+  <!-- Circular path -->
+  <circle cx="240" cy="200" r="155" fill="none" stroke="#58A6FF" stroke-width="2.5"/>
 
-  <!-- produce (top center) -->
-  <rect x="140" y="20" width="120" height="40" rx="8" fill="none" stroke="#58A6FF" stroke-width="2"/>
-  <text x="200" y="46" text-anchor="middle" fill="#C9D1D9" font-size="16" font-weight="600">produce</text>
+  <!-- Clockwise direction arrows at midpoints between nodes -->
+  <polygon points="-8,-5 8,0 -8,5"
+           transform="translate(374,123) rotate(60)" fill="#58A6FF"/>
+  <polygon points="-8,-5 8,0 -8,5"
+           transform="translate(240,355) rotate(180)" fill="#58A6FF"/>
+  <polygon points="-8,-5 8,0 -8,5"
+           transform="translate(106,123) rotate(-60)" fill="#58A6FF"/>
 
-  <!-- verify (bottom right) -->
-  <rect x="270" y="180" width="120" height="40" rx="8" fill="none" stroke="#58A6FF" stroke-width="2"/>
-  <text x="330" y="206" text-anchor="middle" fill="#C9D1D9" font-size="16" font-weight="600">verify</text>
+  <!-- Node: produce (top center) -->
+  <rect x="170" y="22" width="140" height="46" rx="10" fill="#0D1117" stroke="#58A6FF" stroke-width="2"/>
+  <text x="240" y="52" text-anchor="middle" fill="#C9D1D9" font-size="18" font-weight="500"
+        font-family="'Segoe UI', system-ui, -apple-system, sans-serif">produce</text>
 
-  <!-- accumulate (bottom left) -->
-  <rect x="10" y="180" width="130" height="40" rx="8" fill="none" stroke="#58A6FF" stroke-width="2"/>
-  <text x="75" y="206" text-anchor="middle" fill="#C9D1D9" font-size="16" font-weight="600">accumulate</text>
+  <!-- Node: verify (bottom right) -->
+  <rect x="304" y="255" width="140" height="46" rx="10" fill="#0D1117" stroke="#58A6FF" stroke-width="2"/>
+  <text x="374" y="285" text-anchor="middle" fill="#C9D1D9" font-size="18" font-weight="500"
+        font-family="'Segoe UI', system-ui, -apple-system, sans-serif">verify</text>
 
-  <!-- Arrow: produce → verify -->
-  <line x1="250" y1="58" x2="285" y2="178" stroke="#58A6FF" stroke-width="2" marker-end="url(#arrow)"/>
-
-  <!-- Arrow: verify → accumulate -->
-  <line x1="270" y1="200" x2="142" y2="200" stroke="#58A6FF" stroke-width="2" marker-end="url(#arrow)"/>
-
-  <!-- Arrow: accumulate → produce -->
-  <line x1="55" y1="180" x2="155" y2="62" stroke="#58A6FF" stroke-width="2" marker-end="url(#arrow)"/>
+  <!-- Node: accumulate (bottom left) -->
+  <rect x="36" y="255" width="140" height="46" rx="10" fill="#0D1117" stroke="#58A6FF" stroke-width="2"/>
+  <text x="106" y="285" text-anchor="middle" fill="#C9D1D9" font-size="18" font-weight="500"
+        font-family="'Segoe UI', system-ui, -apple-system, sans-serif">accumulate</text>
 </svg>
