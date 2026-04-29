@@ -20,7 +20,12 @@ A shared session accumulates local assumptions, abandoned approaches, and retry 
 
 Every meaningful AI coding task is a closed loop:
 
-**produce → verify (isolated) → accumulate → produce**
+```mermaid
+graph LR
+    produce --> verify
+    verify --> accumulate
+    accumulate --> produce
+```
 
 - **Loop-first** — No step is done until independently verified
 - **Wire-composable** — Loops connect through machine contracts, not chat history
@@ -43,7 +48,7 @@ CrossReview implements **verify**. Sopify implements **wire** and **surface**.
 
 CrossReview is the **verify** — atomic, isolated, independent.  
 Sopify is the **wire + surface** — connecting loops, accumulating knowledge.  
-Together: produce → verify → accumulate → produce.
+Together, they close the loop.
 
 <p align="center">
   <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,11,20&height=80&section=footer" width="100%" />
