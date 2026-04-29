@@ -20,12 +20,9 @@ A shared session accumulates local assumptions, abandoned approaches, and retry 
 
 Every meaningful AI coding task is a closed loop:
 
-```mermaid
-graph LR
-    produce --> verify
-    verify --> accumulate
-    accumulate --> produce
-```
+<p align="center">
+  <img src="./loop-triangle.svg" alt="produce → verify → accumulate → produce" width="400" />
+</p>
 
 - **Loop-first** — No step is done until independently verified
 - **Wire-composable** — Loops connect through machine contracts, not chat history
