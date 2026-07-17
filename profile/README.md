@@ -15,6 +15,6 @@ AI coding moves fast. EvidentLoop keeps the work resumable and the evidence insp
   <img src="./evident-loop.png" alt="The Evident Loop: Sopify spans a workflow where an AI host produces, Evidentloop verifies, evidence persists in the repository, and work resumes" width="720" />
 </p>
 
-AI hosts produce. **evidentloop** turns review into traceable evidence. **Sopify** preserves workflow context so work can resume across sessions and hosts.
+AI hosts produce. **Evidentloop** turns review into traceable evidence. **Sopify** preserves workflow context so work can resume across sessions and hosts.
 
 Together, they cover two complementary problems: continuity while work is happening, and evidence after a change.
